@@ -10,17 +10,17 @@ public class ScrabbleScore {
         int count = 0;
         for(char scrabble: word.toLowerCase().toCharArray()){
             String scrabbleString = String.valueOf(scrabble);
-            for(String fc: firstCase){
-                if(fc.equals(scrabbleString))scrabbleScore.add(1);
+            for(String first: firstCase){
+                if(first.equals(scrabbleString))scrabbleScore.add(1);
             }
-            for(String sc: secondCase){
-                if(sc.equals(scrabbleString)) scrabbleScore.add(2);
+            for(String second: secondCase){
+                if(second.equals(scrabbleString)) scrabbleScore.add(2);
             }
-            for(String thc: thirdCase){
-                if(thc.equals(scrabbleString)) scrabbleScore.add(3);
+            for(String third: thirdCase){
+                if(third.equals(scrabbleString)) scrabbleScore.add(3);
             }
-            for(String fc: fourthCase){
-                if(fc.equals(scrabbleString)) scrabbleScore.add(4);
+            for(String fourth: fourthCase){
+                if(fourth.equals(scrabbleString)) scrabbleScore.add(4);
             }
             switch (scrabbleString){
                 case "k":
