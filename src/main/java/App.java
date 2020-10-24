@@ -1,10 +1,12 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class App {
 
-    public static void ScrabbleGame(String continuePlaying) throws IOException {
+    public static void ScrabbleGame(@NotNull String continuePlaying) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         ScrabbleScore scrabbleScore = new ScrabbleScore();
         while(continuePlaying.equals("yes")){

@@ -1,5 +1,4 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class ScrabbleScoreTest {
@@ -15,7 +14,8 @@ public class ScrabbleScoreTest {
         Integer expected = 4;
         assertEquals(expected, testScrabble.calculateScore("ab"));
     }
-    @Test public void calculateScore_returnScoreForThreeLetter_14(){
+    @Test
+    public void calculateScore_returnScoreForThreeLetter_14(){
         ScrabbleScore testScrabble = new ScrabbleScore();
         Integer expected = 14;
         assertEquals(expected, testScrabble.calculateScore("abz"));
